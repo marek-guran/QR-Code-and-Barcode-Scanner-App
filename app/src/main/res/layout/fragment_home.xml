@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan QR code"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place  QR code inside the frame to scan. Please \navoid shake to get results quickly "
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <com.budiyev.android.codescanner.CodeScannerView
+                android:id="@+id/scanner_view"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                app:autoFocusButtonVisible="true"
+                app:flashButtonVisible="true"
+                app:frameAspectRatioHeight="1"
+                app:frameAspectRatioWidth="1"
+                app:frameCornersRadius="50dp"
+                app:frameCornersSize="40dp"
+                app:frameSize="0.70"
+                app:frameThickness="6dp"
+                android:nestedScrollingEnabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scanning code..."
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="25dp"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:padding="18dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/more_bg_rounded_top">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:layout_toLeftOf="@+id/end2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scanner history"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pixel Scanner will keep track of your scannings only if eneabled."/>
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/end2"
+                    android:layout_width="75dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/background_rounded_small"
+                    android:backgroundTint="@android:color/transparent"
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_baseline_history_24"
+                        android:background="@drawable/circle_bg"
+                        android:padding="10dp"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:padding="18dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/more_bg_rounded_middle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:layout_toLeftOf="@+id/end1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Activate/Deactivate History"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The app can keep history of results you scanned inside the app."/>
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/end1"
+                    android:layout_width="75dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/background_rounded_small"
+                    android:backgroundTint="@android:color/transparent"
+                    >
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:thumb="@drawable/switch_selector"
+                        app:thumbTint="@drawable/thumb_tint"
+                        app:track="@drawable/track_selector"
+                        app:trackTint="@drawable/track_tint"
+                        android:checked="false"
+                        />
+
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:padding="18dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/more_bg_rounded_bottom">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:layout_toLeftOf="@+id/end3"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How to use?"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Go through this quick guide and learn how to use QR Scanner"/>
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/end3"
+                    android:layout_width="75dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/background_rounded_small"
+                    android:backgroundTint="@android:color/transparent"
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_baseline_help_outline_24"
+                        android:background="@drawable/circle_bg"
+                        android:padding="10dp"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
+</layout>
