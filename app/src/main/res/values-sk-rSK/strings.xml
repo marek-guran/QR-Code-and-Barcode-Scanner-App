@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Čítačka QR a čiarových kódov</string>
+    <string name="hello_blank_fragment">Ahoj prázdny fragment</string>
+    <string name="scan">Zoskenuj QR kód</string>
+    <string name="scan_text">Vložte QR kód do rámčeka. Prosím snažte sa netriasť so zariadením.</string>
+    <string name="scanning">Skenujem...</string>
+    <string name="more">Viac</string>
+    <string name="history">História</string>
+    <string name="history_text">Budem si pamätať vaše skeny, len keď povolíte toto nastavenie.</string>
+    <string name="on_off_history">Zapnúť/Vypnúť Históriu</string>
+    <string name="on_off_history_text">Dokážem si udržať v pamäti históriu vašich skenov.</string>
+    <string name="guide">Návod ako používať aplikáciu.</string>
+    <string name="how_to_use">Ako používať?</string>
+</resources>
