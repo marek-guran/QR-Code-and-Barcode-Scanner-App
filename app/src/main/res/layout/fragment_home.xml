@@ -18,8 +18,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Scan QR code"
-                android:textColor="@color/black"
+                android:text="@string/scan"
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
@@ -28,7 +27,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Place  QR code inside the frame to scan. Please \navoid shake to get results quickly "
+                android:text="@string/scan_text"
                 android:gravity="center"
                 android:layout_marginTop="12dp"
                 android:layout_marginBottom="12dp" />
@@ -50,15 +49,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Scanning code..."
+                android:text="@string/scanning"
                 android:layout_gravity="center"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="More"
-                android:textColor="@color/black"
+                android:text="@string/more"
                 android:textStyle="bold"
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="25dp"
@@ -80,13 +78,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Scanner history"
-                        android:textColor="@color/black"
+                        android:text="@string/history"
                         android:textSize="16sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pixel Scanner will keep track of your scannings only if eneabled."/>
+                        android:text="@string/history_text"/>
                 </LinearLayout>
                 <FrameLayout
                     android:id="@+id/end2"
@@ -125,13 +122,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Activate/Deactivate History"
-                        android:textColor="@color/black"
+                        android:text="@string/on_off_history"
                         android:textSize="16sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="The app can keep history of results you scanned inside the app."/>
+                        android:text="@string/on_off_history_text"/>
                 </LinearLayout>
                 <FrameLayout
                     android:id="@+id/end1"
@@ -177,12 +173,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="How to use?"
-                        android:textColor="@color/black"
                         android:textSize="16sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Go through this quick guide and learn how to use QR Scanner"/>
+                        android:text="@string/guide"/>
                 </LinearLayout>
                 <FrameLayout
                     android:id="@+id/end3"
