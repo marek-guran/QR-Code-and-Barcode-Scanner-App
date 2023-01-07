@@ -10,4 +10,7 @@
     <string name="on_off_history">Activate/Deactivate History</string>
     <string name="on_off_history_text">The app can keep history of results you scanned inside the app.</string>
     <string name="guide">Go through this quick guide and learn how to use QR Scanner</string>
+    <string name="how_to_use">How to use?</string>
+    <string name="history_image">history_image</string>
+    <string name="question_image">Question Image</string>
 </resources>

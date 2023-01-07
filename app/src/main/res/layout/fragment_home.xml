@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/more"
                 android:textStyle="bold"
-                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="25dp"
                 android:textSize="18sp" />
 
@@ -73,7 +73,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="6dp"
-                    android:layout_toLeftOf="@+id/end2"
+                    android:layout_toStartOf="@+id/end2"
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
@@ -91,12 +91,13 @@
                     android:layout_height="55dp"
                     android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="2dp"
                     android:background="@drawable/background_rounded_small"
                     android:backgroundTint="@android:color/transparent"
                     >
                     <ImageView
+                        android:contentDescription="@string/history_image"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/ic_baseline_history_24"
@@ -117,7 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="6dp"
-                    android:layout_toLeftOf="@+id/end1"
+                    android:layout_toStartOf="@+id/end1"
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
@@ -135,8 +136,8 @@
                     android:layout_height="55dp"
                     android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="2dp"
                     android:background="@drawable/background_rounded_small"
                     android:backgroundTint="@android:color/transparent"
                     >
@@ -167,12 +168,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="6dp"
-                    android:layout_toLeftOf="@+id/end3"
+                    android:layout_toStartOf="@+id/end3"
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="How to use?"
+                        android:text="@string/how_to_use"
                         android:textSize="16sp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -185,12 +186,13 @@
                     android:layout_height="55dp"
                     android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="2dp"
                     android:background="@drawable/background_rounded_small"
                     android:backgroundTint="@android:color/transparent"
                     >
                     <ImageView
+                        android:contentDescription="@string/question_image"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/ic_baseline_help_outline_24"
