@@ -3,7 +3,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="scan">Scan QR code</string>
     <string name="scan_text">Place QR code inside the frame to scan. Please \navoid shake to get results quickly</string>
-    <string name="scanning">Scanning code...</string>
+    <string name="scanning">Scanning code…</string>
     <string name="more">More</string>
     <string name="history">Scanner history</string>
     <string name="history_text">Pixel Scanner will keep track of your scannings only if eneabled.</string>
