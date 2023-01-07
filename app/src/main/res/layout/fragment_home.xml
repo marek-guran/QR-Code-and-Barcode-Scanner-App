@@ -21,7 +21,6 @@
                 android:text="@string/scan"
                 android:textStyle="bold"
                 android:layout_gravity="center"
-                android:layout_marginTop="25dp"
                 android:textSize="19sp" />
 
             <TextView
