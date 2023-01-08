@@ -70,7 +70,6 @@ class HomeFragment : Fragment() {
             codeScanner?.startPreview()
         }
 
-
         return binding.root
     }
 
