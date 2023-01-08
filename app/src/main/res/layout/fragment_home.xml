@@ -23,10 +23,10 @@
                 app:flashButtonVisible="true"
                 app:frameAspectRatioHeight="1"
                 app:frameAspectRatioWidth="1"
-                app:frameCornersRadius="50dp"
+                app:frameCornersRadius="20dp"
                 app:frameCornersSize="40dp"
-                app:frameSize="0.70"
                 app:frameThickness="6dp"
+                app:maskColor="@color/material_dynamic_secondary70"
                 android:nestedScrollingEnabled="false" />
 
             <TextView
@@ -48,6 +48,7 @@
                 android:clickable="true"
                 android:onClick="history_page"
                 android:background="@drawable/more_bg_rounded_top"
+                style="@style/Widget.Material3.FloatingActionButton.Secondary"
                 android:focusable="true">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -98,42 +99,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="6dp"
-                    android:layout_toStartOf="@+id/end1"
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/on_off_history"
+                        android:text="Generate QR Code"
                         android:textSize="16sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/on_off_history_text"/>
+                        android:text="App will create for you QR code."/>
                 </LinearLayout>
-                <FrameLayout
-                    android:id="@+id/end1"
-                    android:layout_width="75dp"
-                    android:layout_height="55dp"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginEnd="2dp"
-                    android:background="@drawable/background_rounded_small"
-                    android:backgroundTint="@android:color/transparent"
-                    >
-
-                    <com.google.android.material.switchmaterial.SwitchMaterial
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:thumb="@drawable/switch_selector"
-                        app:thumbTint="@drawable/thumb_tint"
-                        app:track="@drawable/track_selector"
-                        app:trackTint="@drawable/track_tint"
-                        android:checked="false"
-                        />
-
-                </FrameLayout>
             </RelativeLayout>
 
             <RelativeLayout
@@ -153,12 +129,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/how_to_use"
+                        android:text="Settings"
                         android:textSize="16sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/guide"/>
+                        android:text="Change your preffered settings to your desired options."/>
                 </LinearLayout>
                 <FrameLayout
                     android:id="@+id/end3"
