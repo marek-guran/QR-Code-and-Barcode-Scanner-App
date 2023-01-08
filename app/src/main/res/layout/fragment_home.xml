@@ -21,22 +21,15 @@
                 android:layout_height="350dp"
                 app:autoFocusButtonVisible="true"
                 app:flashButtonVisible="true"
+                app:autoFocusButtonColor="@color/flash"
+                app:flashButtonColor="@color/flash"
                 app:frameAspectRatioHeight="1"
                 app:frameAspectRatioWidth="1"
                 app:frameCornersRadius="20dp"
                 app:frameCornersSize="40dp"
                 app:frameThickness="6dp"
-                app:maskColor="@color/material_dynamic_secondary70"
+                app:maskColor="@color/QR_scan"
                 android:nestedScrollingEnabled="false" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/more"
-                android:textStyle="bold"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="25dp"
-                android:textSize="18sp" />
 
             <RelativeLayout
                 android:id="@+id/history_button"
@@ -81,7 +74,7 @@
                         android:contentDescription="@string/history_image"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_baseline_history_24"
+                        android:src="@drawable/history"
                         android:background="@drawable/circle_bg"
                         android:padding="10dp"
                         android:layout_gravity="center"/>
@@ -110,6 +103,26 @@
                         android:layout_height="wrap_content"
                         android:text="App will create for you QR code."/>
                 </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/end4"
+                    android:layout_width="75dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_rounded_small"
+                    android:backgroundTint="@android:color/transparent"
+                    >
+                    <ImageView
+                        android:contentDescription="@string/question_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/qr_code"
+                        android:background="@drawable/circle_bg"
+                        android:padding="10dp"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
             </RelativeLayout>
 
             <RelativeLayout
@@ -151,7 +164,7 @@
                         android:contentDescription="@string/question_image"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_baseline_help_outline_24"
+                        android:src="@drawable/settings"
                         android:background="@drawable/circle_bg"
                         android:padding="10dp"
                         android:layout_gravity="center"/>
