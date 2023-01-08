@@ -41,7 +41,6 @@
                 android:clickable="true"
                 android:onClick="history_page"
                 android:background="@drawable/more_bg_rounded_top"
-                style="@style/Widget.Material3.FloatingActionButton.Secondary"
                 android:focusable="true">
                 <LinearLayout
                     android:layout_width="match_parent"
