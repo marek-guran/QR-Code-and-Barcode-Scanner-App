@@ -10,6 +10,13 @@
 
     <!--We are using this image
         view to display our QR code-->
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/qr_code_background" />
+
     <ImageView
         android:id="@+id/idIVQrcode"
         android:layout_width="300dp"
@@ -17,6 +24,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:contentDescription="QR Code" />
+
 
     <!--Edit text to enter text
         for creating a QR code-->
