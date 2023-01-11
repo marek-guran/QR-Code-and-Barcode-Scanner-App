@@ -6,10 +6,12 @@ import android.os.Bundle
 import android.os.Environment
 import android.text.TextUtils
 import android.view.Display
+import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidmads.library.qrgenearator.QRGContents
 import androidmads.library.qrgenearator.QRGEncoder
@@ -27,7 +29,8 @@ class QrGeneratorFragment : AppCompatActivity() {
     lateinit var qrIV: ImageView
     lateinit var msgEdt: EditText
     lateinit var generateQRBtn: Button
-    lateinit var saveQrBtn: Button
+
+    lateinit var hiddenView: TextView
 
     // on below line we are creating
     // a variable for bitmap
@@ -46,6 +49,8 @@ class QrGeneratorFragment : AppCompatActivity() {
         qrIV = findViewById(R.id.idIVQrcode)
         msgEdt = findViewById(R.id.idEdt)
         generateQRBtn = findViewById(R.id.idBtnGenerateQR)
+        hiddenView = findViewById(R.id.qr_background)
+        hiddenView.visibility = View.GONE
 
         // on below line we are adding on click
         // listener for our generate QR button.
@@ -91,6 +96,7 @@ class QrGeneratorFragment : AppCompatActivity() {
                     // on below line we are setting
                     // this bitmap to our image view
                     qrIV.setImageBitmap(bitmap)
+                    hiddenView.visibility = View.VISIBLE
                 } catch (e: Exception) {
                     // on below line we
                     // are handling exception
