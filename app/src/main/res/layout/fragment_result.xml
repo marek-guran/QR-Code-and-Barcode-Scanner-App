@@ -43,7 +43,7 @@
                     android:layout_gravity="bottom"
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginBottom="20dp"
-                    android:text="Phone"
+                    android:text="@string/phone"
                     android:textSize="26sp" />
             </FrameLayout>
 
@@ -143,7 +143,7 @@
                     android:layout_gravity="bottom"
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginBottom="20dp"
-                    android:text="Web / Social"
+                    android:text="@string/web_social"
                     android:textSize="26sp" />
             </FrameLayout>
 
@@ -211,7 +211,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Share" />
+                    android:text="@string/share" />
             </LinearLayout>
 
             <LinearLayout
@@ -231,7 +231,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Open"/>
+                    android:text="@string/open"/>
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

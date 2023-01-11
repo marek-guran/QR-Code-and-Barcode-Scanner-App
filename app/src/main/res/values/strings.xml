@@ -15,4 +15,8 @@
     <string name="call">Call</string>
     <string name="message">Message</string>
     <string name="text_other">Text / Other</string>
+    <string name="phone">Phone</string>
+    <string name="web_social">Webpage</string>
+    <string name="share">Share</string>
+    <string name="open">Open</string>
 </resources>

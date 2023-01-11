@@ -14,4 +14,8 @@
     <string name="call">Volať</string>
     <string name="message">Správa</string>
     <string name="text_other">Text / Iné</string>
+    <string name="phone">Telefón</string>
+    <string name="web_social">Webstránka</string>
+    <string name="share">Zdieľať</string>
+    <string name="open">Otvoriť</string>
 </resources>
