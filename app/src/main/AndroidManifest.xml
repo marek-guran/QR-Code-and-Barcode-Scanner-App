@@ -8,6 +8,9 @@
         android:name="android.hardware.camera"
         android:required="false"/>
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
     <application
         android:name=".MyApplication"
@@ -19,7 +22,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ČítačkaQRAČiarovýchKódov"
-        tools:targetApi="33">
+        tools:targetApi="33"
+        android:requestLegacyExternalStorage="true">
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -39,6 +43,20 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.HISTORY" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".QrGeneratorFragment"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.QRGENERATOR" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

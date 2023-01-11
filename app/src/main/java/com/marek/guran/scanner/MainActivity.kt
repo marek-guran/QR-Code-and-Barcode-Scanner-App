@@ -20,6 +20,11 @@ class MainActivity : AppCompatActivity() {
             val Intent = Intent (this, HistoryFragment::class.java)
             startActivity(Intent)
         }
+        val qrButton = findViewById<RelativeLayout>(R.id.qr_generator_button)
+        qrButton.setOnClickListener {
+            val Intent = Intent (this, QrGeneratorFragment::class.java)
+            startActivity(Intent)
+        }
 
     }
 

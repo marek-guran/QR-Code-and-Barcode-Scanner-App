@@ -81,12 +81,16 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/qr_generator_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:padding="18dp"
                 android:layout_marginTop="2dp"
-                android:background="@drawable/more_bg_rounded_middle">
+                android:clickable="true"
+                android:onClick="qr_generator"
+                android:background="@drawable/more_bg_rounded_middle"
+                android:focusable="true">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
