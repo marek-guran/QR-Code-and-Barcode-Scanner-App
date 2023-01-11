@@ -9,4 +9,9 @@
     <string name="change_your_preffered_settings_to_your_desired_options">Upravte si nastavenia aplikácie podľa vašich preferencií.</string>
     <string name="generate_qr_code">Vygenerovať QR kód</string>
     <string name="app_will_create_for_you_qr_code">Aplikácia vygeneruje QR kód.</string>
+    <string name="enter_your_message">Vložte text</string>
+    <string name="generate_qr_code_button">Vygenerovať QR kód</string>
+    <string name="call">Volať</string>
+    <string name="message">Správa</string>
+    <string name="text_other">Text / Iné</string>
 </resources>

@@ -95,7 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Call"
+                    android:text="@string/call"
                     android:textColor="@android:color/system_accent1_600" />
             </LinearLayout>
 
@@ -116,7 +116,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Message"
+                    android:text="@string/message"
                     android:textColor="@android:color/system_accent1_600" />
             </LinearLayout>
         </LinearLayout>
@@ -268,7 +268,7 @@
                     android:layout_gravity="bottom"
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginBottom="20dp"
-                    android:text="Text / Other"
+                    android:text="@string/text_other"
                     android:textColor="@color/black"
                     android:textSize="26sp" />
             </FrameLayout>

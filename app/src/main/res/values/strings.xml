@@ -10,4 +10,9 @@
     <string name="change_your_preffered_settings_to_your_desired_options">Change your preferred settings to your desired options.</string>
     <string name="generate_qr_code">Generate QR Code</string>
     <string name="app_will_create_for_you_qr_code">App will create for you QR code.</string>
+    <string name="enter_your_message">Enter your message</string>
+    <string name="generate_qr_code_button">Generate QR Code</string>
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+    <string name="text_other">Text / Other</string>
 </resources>
