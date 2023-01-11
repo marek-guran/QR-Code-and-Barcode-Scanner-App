@@ -13,4 +13,6 @@
     <color name="focus">@color/white</color>
     <color name="card">#41000000</color>
     <color name="icon_bg">#59000000</color>
+    <color name="nav_bar">#41000000</color>
+    <color name="phone">@color/white</color>
 </resources>

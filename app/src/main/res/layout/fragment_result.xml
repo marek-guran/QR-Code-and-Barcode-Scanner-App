@@ -11,14 +11,14 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@android:color/system_accent1_50">
+        android:background="@color/nav_bar">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_round_arrow_back_24"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="16dp"
-            app:tint="@color/black" />
+            app:tint="@color/phone" />
     </FrameLayout>
 
     <RelativeLayout
@@ -26,8 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar"
-        android:visibility="gone"
-        android:background="@android:color/system_accent1_10">
+        android:visibility="gone">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -36,7 +35,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@android:color/system_accent1_50">
+                android:background="@color/nav_bar">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -45,7 +44,6 @@
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginBottom="20dp"
                     android:text="Phone"
-                    android:textColor="@color/black"
                     android:textSize="26sp" />
             </FrameLayout>
 
@@ -59,13 +57,12 @@
                 android:text="8220677388"
                 android:textSize="20sp"
                 app:drawableLeftCompat="@drawable/ic_round_person_add_24"
-                app:drawableTint="@android:color/system_accent1_600" />
+                app:drawableTint="@color/phone" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/system_accent1_50"/>
+                android:layout_marginTop="20dp"/>
 
         </LinearLayout>
 
@@ -89,14 +86,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_round_phone_24"
-                    app:tint="@android:color/system_accent1_600" />
+                    app:tint="@color/phone" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/call"
-                    android:textColor="@android:color/system_accent1_600" />
+                    android:textColor="@color/phone" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,14 +107,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_round_message_24"
-                    app:tint="@android:color/system_accent1_600" />
+                    app:tint="@color/phone" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/message"
-                    android:textColor="@android:color/system_accent1_600" />
+                    android:textColor="@color/phone" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
@@ -127,8 +124,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar"
-        android:visibility="gone"
-        android:background="@android:color/system_accent1_10">
+        android:visibility="gone">
         <LinearLayout
             android:id="@+id/starter"
             android:layout_width="match_parent"
@@ -139,7 +135,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@android:color/system_accent1_50">
+                android:background="@color/nav_bar">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -148,7 +144,6 @@
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginBottom="20dp"
                     android:text="Web / Social"
-                    android:textColor="@color/black"
                     android:textSize="26sp" />
             </FrameLayout>
 
@@ -162,7 +157,6 @@
                 android:background="@drawable/background_rounded_small"
                 android:padding="12dp"
                 android:textSize="16sp"
-                android:textColor="#007AC5"
                 android:backgroundTint="@color/white"
                 android:drawableStart="@drawable/ic_round_link_24"
                 android:drawablePadding="12dp"
@@ -170,7 +164,7 @@
                 android:linksClickable="true"
                 android:textColorLink="#007AC5"
                 android:ellipsize="end"
-                android:drawableTint="@android:color/system_accent1_600"/>
+                android:drawableTint="@color/phone"/>
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
@@ -197,7 +191,6 @@
             android:layout_alignParentBottom="true"
             android:layout_marginTop="12dp"
             android:orientation="horizontal"
-            android:background="@android:color/system_accent1_10"
             android:paddingVertical="12dp"
             android:weightSum="2">
 
@@ -212,14 +205,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_round_ios_share_24"
-                    app:tint="@android:color/system_accent1_600" />
+                    app:tint="@color/phone" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Share"
-                    android:textColor="@android:color/system_accent1_600" />
+                    android:text="Share" />
             </LinearLayout>
 
             <LinearLayout
@@ -233,14 +225,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_round_open_in_new_24"
-                    app:tint="@android:color/system_accent1_600" />
+                    app:tint="@color/phone" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Open"
-                    android:textColor="@android:color/system_accent1_600" />
+                    android:text="Open"/>
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
@@ -250,8 +241,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar"
-        android:visibility="gone"
-        android:background="@android:color/system_accent1_10">
+        android:visibility="gone">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -260,7 +250,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@android:color/system_accent1_50">
+                android:background="@color/nav_bar">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -269,7 +259,6 @@
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginBottom="20dp"
                     android:text="@string/text_other"
-                    android:textColor="@color/black"
                     android:textSize="26sp" />
             </FrameLayout>
 
@@ -279,7 +268,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="20dp"
-                android:textSize="15sp"/>
+                android:textSize="24sp"/>
 
         </LinearLayout>
     </RelativeLayout>
